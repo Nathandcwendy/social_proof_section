@@ -21,11 +21,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot Preview](./images/screenshot.png)
 
 ### Links
 
--[Solution Page](https://your-solution-url.com)
+-[Solution Page](https://www.frontendmentor.io/solutions/responsive-social-rating-landing-page-0SiKsgJ0qo)
 
 -[Live Site](https://socialproofsection-nate.netlify.app/)
 
