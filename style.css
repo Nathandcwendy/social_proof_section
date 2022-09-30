@@ -182,6 +182,15 @@ main .box {
   opacity: 0.9;
 }
 
+.box h2 {
+  color: var(--White);
+  line-height: 1.5;
+  font-size: var(--FontSize);
+  font-family: var(--FontFamily);
+  text-align: left;
+  opacity: 0.9;
+}
+
 .box blockquote {
   color: var(--White);
   line-height: 1.5;
@@ -191,12 +200,12 @@ main .box {
   opacity: 0.9;
 }
 
-.box-text > p {
+.box-text > h2 {
   font-weight: 500;
   opacity: 0.9;
 }
 
-div.box-text p:nth-of-type(2) {
+div.box-text p {
   color: var(--SoftPink);
 }
 
