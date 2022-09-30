@@ -17,6 +17,18 @@
   font-family: "League Spartan", sans-serif;
 }
 
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
 p {
   font-size: var(--FontSize);
   font-family: var(--FontFamily);
@@ -163,6 +175,15 @@ main .box {
 }
 
 .box p {
+  color: var(--White);
+  line-height: 1.5;
+  font-size: var(--FontSize);
+  font-family: var(--FontFamily);
+  text-align: left;
+  opacity: 0.9;
+}
+
+.box blockquote {
   color: var(--White);
   line-height: 1.5;
   font-size: var(--FontSize);
