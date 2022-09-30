@@ -36,17 +36,18 @@ p {
 
 body {
   background-color: var(--White);
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: 35%, 70%;
+  background-size: 37%, 85% 90%;
   background-image: url(images/bg-pattern-top-desktop.svg),
     url(images/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
-  background-position: 0rem 0rem, right bottom;
+  background-position: left top, right bottom;
   padding: 3rem 0;
 }
 
@@ -132,7 +133,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2.5rem;
   margin-bottom: 4rem;
 }
@@ -147,13 +148,11 @@ main .box {
 }
 
 .box:nth-of-type(2) {
-  position: relative;
-  top: 1rem;
+  margin-top: 1rem;
 }
 
 .box:nth-of-type(3) {
-  position: relative;
-  top: 2rem;
+  margin-top: 2rem;
 }
 
 .box .box-header {
@@ -270,6 +269,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 0.1rem;
+    margin-bottom: 2rem;
   }
 
   .container {
@@ -278,6 +278,8 @@ footer {
 
   body {
     height: auto;
+    background-size: 100%;
+    background-position: -1rem 0rem, right bottom;
   }
 
   .header-right p {
@@ -287,15 +289,6 @@ footer {
 
   div.header-right {
     width: 80%;
-  }
-
-  main {
-    margin-bottom: 3rem;
-  }
-
-  body {
-    background-size: 100%;
-    background-position: -1rem 0rem, right bottom;
   }
 
   .star-img {
@@ -351,5 +344,15 @@ footer {
   footer {
     width: 95vw;
     padding: 0 2rem;
+  }
+}
+
+@media (max-width: 648px) {
+  body {
+    background-size: 100%, 100%;
+    background-image: url(images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right 1rem top, right bottom;
   }
 }
